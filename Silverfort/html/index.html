@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silverfort</title>
+  <meta name="description" content="Silverfortの公式ウェブサイトです。">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Oswald:wght@500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo"><a href="/"><img class="logo1" src="img/msys_logo.png.png" alt="MSYS"></a><a href="/"><img class="logo2"
+          src="./img/i-digio.png" alt="丸紅"></a><a href="/"><img src="./img/black_logo.svg" alt="Silverfort"></a></h1>
+    <button id="hamburger" class="hamburger">
+      <span class="hamburger__line"></span>
+    </button>
+    <nav id="gnav" class="gnav">
+      <div class="header__tel"><a href="tel:03-4243-4210">TEL:03-4243-4210</a></div>
+      <ul class="gnav__list">
+        <li class="gnav__item"><a href="#task" class="gnav__link">課題</a></li>
+        <li class="gnav__item dropdown"><span class="gnav__link">機能</span>
+          <!-- 追加ドロップダウンメニュー -->
+        <ul class="dropdown__item">
+          <li class="btn1 menu-item"><a href="#fort">可視化</a></li>
+          <li class="btn2 menu-item"><a href="#fort">分析</a></li>
+          <li class="btn3 menu-item"><a href="#fort">対策</a></li>
+          <li class="btn4 menu-item"><a href="#fort">監査</a></li>
+          <li class="btn5 menu-item"><a href="#fort">導入</a></li>
+          <li class="btn6 menu-item"><a href="#fort">連携</a></li>
+        </ul>
+        </li>
+        <li class="gnav__item dropmenu"><span class="gnav__link">機能</span>
+          <!-- 追加ドロップダウンメニュー -->
+        <ul class="dropdown__items">
+          <li class="btn1 menu-item"><a href="#fort">可視化</a></li>
+          <li class="btn2 menu-item"><a href="#fort">分析</a></li>
+          <li class="btn3 menu-item"><a href="#fort">対策</a></li>
+          <li class="btn4 menu-item"><a href="#fort">監査</a></li>
+          <li class="btn5 menu-item"><a href="#fort">導入</a></li>
+          <li class="btn6 menu-item"><a href="#fort">連携</a></li>
+        </ul>
+        </li>
+        <li class="gnav__item"><a href="/" class="gnav__link rounded-btn button--secondary">資料ダウンロード</a></li>
+        <li class="gnav__item"><a href="/" class="gnav__link rounded-btn button--default">お問合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-contents">
+    <div class="main-visual">
+      <div class="main-visual__image"><img src="./img/main_img.png" alt="イメージイラスト"></div>
+      <p class="main-visual__catch">統合ID保護プラットフォーム(ITDR)<br>ランサムウェア攻撃<br>
+        から認証情報を<br>
+        守れていますか？</p>
+    </div>
+
+    <div class="main-lead">
+      <p>攻撃者は、目的達成のために必ず水平移動(ラテラルムーブメント)しながら特権IDの奪取を試みます。<br>
+        特権IDが奪取されると、攻撃者はID環境を掌握して自由に活動できるようになり甚大な被害へとつながってしまうため、「認証情報」を保護することは非常に重要です。<br>
+        攻撃者は、正規の認証行為を利用した攻撃や正規の認証情報を利用してくるため、EDR製品といった従来のセキュリティ製品では検知や防御は困難です。<br>
+        そのため、ID保護に特化したセキュリティ対策製品の導入が不可欠です。</p>
+    </div>
+
+    <div class="container">
+      <div class="main-arrow"><img src="./img/arrow.png" alt=""></div>
+      <div class="main-image"><img src="./img/figure-1.png" alt=""></div>
+      <div class="main-arrow"><img src="./img/arrow.png" alt=""></div>
+      <section class="section attacker">
+        <h2 class="heading-lv2-default section__title">
+          攻撃者の目的達成
+        </h2>
+        <div class="grid grid--pc3col attacker-list">
+          <div class="grid__item card">
+            <div class="card__image"><img src="./img/icon1.png" alt=""></div>
+            <div class="card__body">
+              <p class="card__title">機密情報の窃取</p>
+            </div>
+          </div>
+          <div class="grid__item card">
+            <div class="card__image"><img src="./img/icon2.png" alt=""></div>
+            <div class="card__body">
+              <p class="card__title">各種データの破壊</p>
+            </div>
+          </div>
+          <div class="grid__item card">
+            <div class="card__image"><img src="./img/icon3.png" alt=""></div>
+            <div class="card__body">
+              <p class="card__title">ランサムウェアの拡散</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="main-arrow"><img src="./img/arrow.png" alt=""></div>
+      <section class="section damage">
+        <h2 class="heading-lv2-fluid section__title">
+          <span>甚大な被害へと発展</span>
+        </h2>
+        <ul class="grid grid--pc4col damage-list">
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon4.png" alt=""></div>
+            <p class="item__caption"><span>身代金/機密暴露の脅迫</span></p>
+          </li>
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon5.png" alt=""></div>
+            <p class="item__caption">企業活動の停止</p>
+          </li>
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon6.png" alt=""></div>
+            <p class="item__caption">取引先への影響</p>
+          </li>
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon7.png" alt=""></div>
+            <p class="item__caption">インシデント<br>
+              調査・復旧対応</p>
+          </li>
+        </ul>
+        <p class="damage__catch">特権アカウントだけでなく<br>
+          サービスアカウントも狙われている</p>
+        <p class="damage__text">サービスアカウントとは、データ連携や自動的なタスクを実行するためのシステムが使用する重要なアカウントです。<br>
+          その特性上、様々なセキュリティ課題を抱えており、攻撃者に奪取された場合に甚大な被害につながる可能性があります。
+        </p>
+        <ul class="grid grid--pc4col task-list">
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon8.png" alt=""></div>
+            <p class="item__caption"><span>パスワードの課題</span></p>
+            <p class="item__text">定期的なパスワード変更を行うと設定ミスによるシステム影響のリスクがあるため、<span>導入時に設定したパスワードのまま変更されない</span>ことが多い。</p>
+          </li>
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon9.png" alt=""></div>
+            <p class="item__caption">付与される権限の課題</p>
+            <p class="item__text">システム連携やタスクを実行するために必要な権限不足によるトラブルを回避しようと、<span>過剰な権限を付与される</span>ことが多い。</p>
+          </li>
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon10.png" alt=""></div>
+            <p class="item__caption">管理上の課題</p>
+            <p class="item__text">人ではなくシステムに紐づくため、システムが撤去されても<span>サービスアカウントは有効化状態で放置される</span>ことが多い。</p>
+          </li>
+          <li class="grid__item item">
+            <div class="item__image"><img src="./img/icon11.png" alt=""></div>
+            <p class="item__caption">保護の課題</p>
+            <p class="item__text">人ではなくシステムが使用するアカウントのため、<span>特権ID管理製品や多要素認証製品では保護できない。</span></p>
+          </li>
+        </ul>
+      </section>
+      <section class="section--bg silverfort">
+        <div class="silverfort__logo"><img src="./img/logo_sq.svg" alt="Silverfort"></div>
+        <div class="silverfort__body">
+          <h2 class="silverfort__title">統合ID保護プラットフォーム製品<br>
+            Silverfort
+          </h2>
+          <p class="silverfort__text">Silverfortは、オンプレミスおよびクラウド環境にわたって単一の統合ID保護レイヤーを構築し攻撃者から認証情報を守ります。<br>
+            レガシーシステム、コマンドラインインターフェース、サービスアカウント、クローズド環境のシステムやデバイスなど今まで保護できていなかったリソースにまでIDセキュリティを拡張できる製品です。
+          </p>
+        </div>
+      </section>
+      <section class="section--bg product" id="task">
+        <h2 class="heading-lv2-ja">実現したいこと</h2>
+        <ul class="grid grid--pc2col product-list">
+          <li class="grid__item"><span class="number">1</span><span class="text">ランサムウェア対策</span>
+          </li>
+          <li class="grid__item"><span class="number">2</span><span class="text">ADセキュリティの強化</span>
+          </li>
+          <li class="grid__item"><span class="number">3</span><span class="text">認証の強化</span>
+          </li>
+          <li class="grid__item"><span class="number">4</span><span class="text">特権IDの管理</span>
+          </li>
+        </ul>
+        <div class="main-arrow"><img src="./img/arrow2.png" alt=""></div>
+        <div class="grid grid--pc4col task-list">
+          <div class="card">
+            <h3>可視化の課題</h3>
+            <p>全ての特権IDを<br>
+              把握できていない
+            </p>
+            <p class="_center">認証通信の可視化が<br>
+              できていない
+            </p>
+            <span></span>
+          </div>
+          <div class="card">
+            <h3>分析の課題</h3>
+            <p>危険度の高い<br>
+              アカウントがわからない
+            </p>
+            <p class="_center">悪意のある認証行為を<br>
+              検出できていない
+            </p>
+          </div>
+          <div class="card">
+            <h3>対策の課題</h3>
+            <p>水平移動を<br>
+              防止できていない
+            </p>
+            <p>特権アカウント/<br>
+              サービスアカウント<br>
+              を保護できていない
+            </p>
+          </div>
+          <div class="card">
+            <h3>監査の課題</h3>
+            <p>アカウントの棚卸しが<br>
+              できていない
+            </p>
+            <p>利用申請と認証ログの<br>
+              突き合わせが<br>
+              できていない
+            </p>
+          </div>
+        </div>
+        <div class="main-arrow"><img src="./img/arrow2.png" alt=""></div>
+      </section>
+      <section class="silverfort2 section--bg">
+        <div class="bg">
+          <picture>
+            <source srcset="./img/bk-1.png" media="(min-width: 768px)">
+            <img src="./img/bk-1-sp.png" alt="">
+          </picture>
+        </div>
+        <div class="container">
+          <div class="silverfort2__logo">
+            <img src="./img/white_logo.svg" alt="">
+          </div>
+          <p class="silverfort2__title">Silverfortで課題解決！</p>
+          <ul class="grid grid--pc4col solution-list">
+            <li class="card">
+              <p class="number">Solution.01</p>
+              <img src="./img/icon12.png" alt="">
+              <p class="text">特権IDや<br>
+                認証通信の可視化</p>
+            </li>
+            <li class="card">
+              <p class="number">Solution.02</p>
+              <img src="./img/icon13.png" alt="">
+              <p class="text">AI/機械学習による<br>
+                脅威検出とリスク判定</p>
+            </li>
+            <li class="card">
+              <p class="number">Solution.03</p>
+              <img src="./img/icon14.png" alt="">
+              <p class="text">既存影響なく強力な<br>
+                認証制御を適用</p>
+            </li>
+            <li class="card">
+              <p class="number">Solution.04</p>
+              <img src="./img/icon15.png" alt="">
+              <p class="text">ID監査の<br>
+                運用作業を効率化</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="silverfort3 section--bg" id="fort">
+        <h2 class="heading-lv2-ja">Silverfort 機能</h2>
+        <nav class="category">
+          <ul class="category__list">
+            <li class="category__item category1">
+              可視化
+            </li>
+            <li class="category__item category2">
+              分析
+            </li>
+            <li class="category__item category3">
+              対策
+            </li>
+            <li class="category__item category4">
+              監査
+            </li>
+            <li class="category__item category5">
+              導入
+            </li>
+            <li class="category__item category6">
+              連携
+            </li>
+          </ul>
+        </nav>
+        <div class="category__content category1__content" id="category1">
+          <section>
+            <h3 class="category__title">特権アカウントや隠れ特権アカウントの可視化</h3>
+            <p class="category__desc">
+              リアルタイムにドメイン管理者や特権アカウント、隠れ特権アカウント、未使用アカウント、長期間パスワード変更していないアカウント、共有アカウントなど様々な要素で可視化することができます。<br>
+              隠れ特権アカウントは、直接的に特権を与えられているアカウントであり手作業で検出するには多くの労力を伴いますが、自動で判定理由を添えて検出することができます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">アカウントの脆弱性検出</p>
+                <figure class="category__thumb">
+                  <img src="./img/img1.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">隠れ特権アカウン</p>
+                <figure class="category__thumb">
+                  <img src="./img/img2.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section class="section--bg">
+            <h3 class="category__title">サービスアカウントの自動判別と検出</h3>
+            <p class="category__desc">ID環境をAI/機械学習で常に学習しているため、サービスアカウントを自動判別して検出します。手作業でサービスアカウ
+              ントか判別するには非常に困難ですが、迅速に正確な検出を行うことができます。
+            </p>
+            <div class="category__center">
+              <p class="heading-lv2-default">サービスアカウントの自動抽出</p>
+              <figure class="category__thumb">
+                <img src="./img/img3.png" alt="">
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h3 class="category__title">認証通信の可視化</h3>
+            <p class="category__desc">Active Directory/Entra ID環境の認証履歴を全体またはアカウント毎、デバイス毎にわかりやすい形で可視化することが
+              できます。フィルターを使用して、必要な情報を迅速に調査することもできます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">アカウント毎の認証履</p>
+                <figure class="category__thumb">
+                  <img src="./img/img4.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">ID環境全体の認証履</p>
+                <figure class="category__thumb">
+                  <img src="./img/img5.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+
+        </div>
+        <div class="category__content category2__content" id="category2">
+          <section>
+            <h3 class="category__title">アカウントの脆弱性と攻撃の検出</h3>
+            <p class="category__desc">実観測された攻撃手法をまとめたフレームワークであるMITRE ATT&CK を指標として、アカウントの脆弱性の検出、水平移動(ラテラルムーブメント)、Blute
+              Force(ブルートフォース）、Golden
+              Ticket(ゴールデンチケット)などの攻撃を検出することができます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">アカウントの脆弱性検出</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab2-1.png" alt="">
+                </figure>
+                <p class="category__text">・NTLM v1認証を使用している<br>
+                  ・SPNを持つユーザーアカウント<br>
+                  ・チケットにDESを使用している<br>
+                  ・パスワードが不要なユーザーアカウント<br>
+
+                  ・制約のない委任アカウント<br>
+                  ・古いユーザーアカウントの認証<br>
+                  ・Build-inアカウントの使用<br>
+                  <span>…等</span>
+                </p>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">ID攻撃の検出</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab2-2.png" alt="">
+                </figure>
+                <p class="category__text">・SMB列挙 /SPN列挙偵察<br>
+                  ・ASREP Roasting<br>
+                  ・Brute Force / Reverse<br>
+                  ・Kerberoasting<br>
+                  ・Golden / Sapphire Ticket<br>
+                  ・Domain Controller Shadow<br>
+                  ・Log4Shell<br>
+                  <span>…等</span>
+                </p>
+              </div>
+            </div>
+          </section>
+          <section class="section--bg">
+            <h3 class="category__title">異常な認証の振る舞いを検出</h3>
+            <p class="category__desc">
+              AI/機械学習によってアカウント毎に認証行為のベースラインを構築することで、普段と違う認証行為を検出します。従来製品では、単純に閾値を基にしているため検出できなかった攻撃者の偵察活動や正規の認証情報を使用した怪しい認証行為を検出できます。
+            </p>
+            <div class="category__center">
+              <figure class="category__thumb">
+                <img src="./img/tab/tab2-3.png" alt="">
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h3 class="category__title">アカウント毎にリスクレベルを判定</h3>
+            <p class="category__desc">アカウント毎に検出した「脆弱性」、「脅威検知」、「振る舞い」などから総合的なリスクレベルを自動的に判定します。
+              リスクレベルの高いアカウントから優先順位をつけて対応することが可能となり、ID環境のリスクを効果的に低減することができます。
+              サードパーティ製品で検知した脅威をリスクレベルに反映させることも可能です。
+            </p>
+            <div class="category__center">
+              <figure class="category__thumb">
+                <img src="./img/tab/tab2-4.png" alt="">
+              </figure>
+            </div>
+          </section>
+        </div>
+        <div class="category__content category3__content" id="category3">
+          <section>
+            <h3 class="category__title">認証ファイアウォール</h3>
+            <p class="category__desc">攻撃者の水平移動(ラテラルムーブメント)を防止するためにID環境にポリシーによる認証ブロック機能を既存影響なく組み込むことができます。
+              アカウント、認証元、認証先、プロトコルなどの条件付けやリスクベースによる認証制御によって、攻撃者を侵入した1台のPCに封じ込めることができます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">ポリシー設定</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab3-1.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">認証ファイアウォール</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab3-2.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section class="section--bg">
+            <h3 class="category__title">サービスアカウント保護</h3>
+            <p class="category__desc">
+              サービスアカウントが実際に使用している認証通信の一覧から認証を許可する条件付けを行い、合致しない認証通信をブロックするポリシーを適用することで攻撃者の不正使用を防止します。<br>
+              ポリシー運用を自動化する「スマートポリシー」を活用することで運用負荷を低減することもできます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">ポリシー設定</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab3-3.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">認証ファイアウォール</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab3-4.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="category__title">多要素認証</h3>
+            <p class="category__desc">
+              あらゆるデバイスやシステムに多要素認証機能を既存影響なく組み込むことができます。脅威検知や一定のリスクレベル以上で自動的に多要素認証を適用するリスクベース認証に対応しており、ユーザーの利便性を低下させずに全てのアカウントを保護できます。また、インターネット接続がないオフライン環境での多要素認証や攻撃者が利用するPsExec等のコマンドラインアクセスにも対応しており、あらゆる環境の認証を強化できます。
+            </p>
+            <div class="category__center">
+              <p class="heading-lv2-default">リスクベース認証</p>
+              <figure class="category__thumb">
+                <img src="./img/tab/tab3-5.png" alt="">
+              </figure>
+              <p class="heading-lv2-default">オフライン多要素認証</p>
+              <figure class="category__thumb">
+                <img src="./img/tab/tab3-6.png" alt="">
+              </figure>
+            </div>
+          </section>
+          <section class="section--bg">
+            <h3 class="category__title">特権アクセスセキュリティ(PAS)</h3>
+            <p class="category__desc">
+              特権アカウントの権限昇格を含む利用実態を分析し、自動的にアカウントをエンタープライズアクセスモデルに準拠した階層別に分類します。<br>
+              階層に応じて認証制御を適用することで攻撃者による特権IDの侵害を効果的に防止することができます。また、普段は特権アカウントを無効化しておき、必要な時に理由を添えてアクセス権を申請し、時限的に付与するJIT(Just-In-Time)アクセス機能を搭載しており、従来の特権ID管理製品にあるパスワードローテーションや複雑なセキュリティ制御を導入することなく、強固な認証を実現できます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">ポリシー設定</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab3-7.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">認証ファイアウォール</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab3-8.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="category__content category4__content" id="category4">
+          <section>
+            <h3 class="category__title">ID監査の効率化</h3>
+            <p class="category__desc">
+              未使用アカウントの検出や指定リソースへの認証状況を抽出することができ、アカウントの棚卸し作業や長期間システムを利用していないアカウントの棚卸し作業などを効率化できます。<br>
+              また、必要な認証ログを簡単に抽出してエクスポートできるため、特権IDの利用申請と実際の認証ログを突合する時間を削減できます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <p class="heading-lv2-default">未使用アカウントの抽出</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab4-1.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <p class="heading-lv2-default">特定の認証ログの抽出</p>
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab4-2.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="category__content category5__content" id="category5">
+          <section>
+            <h3 class="category__title">簡単導入で既存影響なし</h3>
+            <p class="category__desc">お客様の仮想基盤/IaaS環境にSilverfortサーバを構築し、Microsoft社と共同開発した軽量で低負荷なアダプターをActive
+              Directoryサーバにインストールするだけで導入できます。<br>
+              エージェントレス/プロキシレス形態のため、ログイン先の社内システムの改修や認証フローの変更が不要であり、既存環境に影響を与えずに迅速にIDセキュリティの展開が可能です。
+            </p>
+            <div class="category__center">
+              <figure class="category__thumb">
+                <img src="./img/tab/tab5-1.png" alt="">
+              </figure>
+            </div>
+          </section>
+          <section class="section--bg">
+            <h3 class="category__title">複数のハイパーバイザー/IaaSをサポート</h3>
+            <div class="category__center">
+            <figure class="category__thumb">
+              <img src="./img/tab/tab5-2.png" alt="">
+            </figure>
+          </div>
+          </section>
+        </div>
+        <div class="category__content category6__content" id="category6">
+          <section>
+            <h3 class="category__title">Microsoft Entra IDの保護</h3>
+            <p class="category__desc">
+              SilevrfortをEntra ID環境にまで拡張することでアカウント乗っ取りによる不正利用などを防止することができ、Entra ID環境のIDセキュリティを高めることができます。<br>
+              また、Active Directory環境とEntra ID環境を1つの製品で対応できるため、運用負荷の低減や効果的なセキュリティ対策を実現できます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab6-1.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab6-2.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+          <section class="section--bg">
+            <h3 class="category__title">他社認証トークンとの連携</h3>
+            <p class="category__desc">Silverfort独自の認証アプリも利用できますが、お客様が既存で利用されている他社の認証アプリやトークンをSilverfortと連携することで継続してご利用いただけます。
+            </p>
+            <div class="category__center">
+              <figure class="category__thumb">
+                <img src="./img/tab/tab6-3.png" alt="">
+              </figure>
+            </div>
+          </section>
+          <section>
+            <h3 class="category__title">Microsoft Entra IDの保護</h3>
+            <p class="category__desc">SilevrfortをEntra ID環境にまで拡張することでアカウント乗っ取りによる不正利用などを防止することができ、Entra ID環境のIDセキュリティを高めることができます。<br>
+              また、Active Directory環境とEntra ID環境を1つの製品で対応できるため、運用負荷の低減や効果的なセキュリティ対策を実現できます。
+            </p>
+            <div class="category__inner">
+              <div class="category__body">
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab6-4.png" alt="">
+                </figure>
+              </div>
+              <div class="category__body">
+                <figure class="category__thumb">
+                  <img src="./img/tab/tab6-5.png" alt="">
+                </figure>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </section>
+    </div>
+    <div id="fixed-btn">
+      <a href="#top">PAGE<br>TOP</a>
+    </div>
+  </main>
+  <aside class="cv-area">
+    <div class="container">
+      <h2 class="heading-lv3 heading-lv3--center heading-lv3--white cv-area__title">資料請求・お問い合わせ</h2>
+      <p class="cv-area__tel"><a href="tel:03-4243-421">TEL：03-4243-4210</a></p>
+      <p class="cv-area__txt">お問い合わせ・お見積りのご希望等は、<br class="pc-none">お気軽に下記よりお問い合わせください。</p>
+      <div class="button-center">
+        <p class="cv-area__btn"><a href="/contact/" class="button button--md button--action">資料ダウンロード</a></p>
+        <p class="cv-area__btn"><a href="/contact/" class="button button--md button--primary">お問合わせ</a></p>
+      </div>
+    </div>
+  </aside>
+  <footer class="footer">
+    <ul class="footer__menu">
+      <li><a href="#">お問い合わせ</a></li>
+      <li><a href="#">ご利用条件</a></li>
+      <li><a href="#">個人情報保護方針</a></li>
+      <li><a href="#">情報セキュリティ基本方針</a></li>
+      <li><a href="#">丸紅情報システムズ公式サイト</a></li>
+    </ul>
+    <p class="footer__copyright"><small lang="en">Copyright &copy; MARUBENI INFORMATION SYSTEMS CO.,LTD.</small></p>
+  </footer>
+</body>
+
+</html>
